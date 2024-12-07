@@ -1,0 +1,117 @@
+body {
+  background-color: #3e4e4a;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.App {
+  background-color: #b1b2ad;
+  height: 100vh;
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+h1 {
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 10dvh;
+  display: grid;
+  background-color: #032022;
+  color: #d1dee5;
+  padding: 15px;
+  margin: 0;
+}
+
+iframe {
+  width: 100%;
+  border: none;
+}
+
+h4 {
+  background-image: linear-gradient(#4a645c, #5d7e74, #4a645c, #a9c9d3);
+  color: #022227;
+  display: grid;
+  background-color: darkgrey;
+  margin: 2vh auto;
+  padding: 30px;
+  max-width: 30%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+
+button {
+  font-family: "DM Sans", sans-serif;
+  background-color: #153503;
+  color: #c6d5be;
+  font-weight: bold;
+  padding: 10px 20px;
+  max-width: 200px;
+  width: auto;
+  margin: 10px auto;
+}
+
+section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+figure {
+  border: 8px solid #3c051b;
+  padding: 10px;
+  background-color: #1b2631;
+  max-width: 300px;
+  margin: 0;
+  width: 100%;
+}
+
+p {
+  background-color: #032022;
+  color: #e1e8e6;
+  padding: 30px;
+  text-align: left;
+  margin: 0;
+  box-sizing: border-box;
+  width: 300px;
+  height: auto;
+  max-height: 250px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  white-space: normal;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  .App {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  figure,
+  p {
+    width: 100%;
+    max-height: none;
+    min-height: auto;
+  }
+}
